@@ -1,0 +1,26 @@
+/* Movil y pantallas estrechas. Vistas en lista, barra inferior y controles tactiles */
+.lsv{display:none}
+.dcard{border:1px solid var(--bd);border-radius:14px;padding:10px 12px;background:var(--in);margin-bottom:10px}
+.dcard.hol{background:var(--hol)}.dcard.key{background:var(--key)}
+.dh{display:flex;gap:8px;align-items:baseline;margin-bottom:4px}.dh small{color:var(--mut)}
+.li{display:flex;gap:10px;align-items:center;padding:8px 0 8px 10px;border-left:4px solid var(--c);margin-top:6px;cursor:pointer}
+.li .lt{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.li .ln{display:flex;flex-direction:column;min-width:0}.li .ln small{color:var(--mut)}
+.li.m{border-left-color:var(--bad)}.li.m b{color:var(--bad)}
+@media (max-width:760px){
+ .tlv{display:none}.lsv{display:block}
+ header{padding:16px 14px}header h1{font-size:19px}header p{font-size:12px}
+ main{padding:12px}.card{padding:14px;border-radius:16px}.grid{grid-template-columns:1fr}
+ input,select,textarea{font-size:16px}
+ .app{flex-direction:column}.mn{padding-bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+ .sb{position:fixed;top:auto;bottom:0;left:0;right:0;width:auto;height:auto;flex-direction:row;justify-content:space-around;gap:0;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));border-right:0;border-top:1px solid var(--gb);z-index:15;overflow:visible}
+ .sb .lg{display:none}.nv{flex:1;flex-direction:column;gap:2px;font-size:12px;padding:6px 4px;text-align:center;justify-content:center;width:auto}.nv span{font-size:20px;line-height:1}
+ .sh{grid-template-columns:1fr 1fr 64px 64px}.sh input:first-child{grid-column:1/-1}
+ .d{min-width:38px;height:38px}.emp .days>b{width:100%!important}
+ .tot{grid-template-columns:90px 1fr}.tot span{grid-column:1/-1}
+ .ds{gap:4px}.dc{min-width:0;padding:8px 2px}.dc b{font-size:17px}.dc small{font-size:9px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .cal{min-width:0;grid-template-columns:repeat(7,1fr);gap:3px}.c{min-height:54px;padding:3px;cursor:pointer}.c .tag{display:none}
+ .ch{display:inline-block;width:9px;height:9px;padding:0;margin:3px 2px 0 0;border-radius:50%;font-size:0;pointer-events:none;box-shadow:none}
+ .ch.m{background:transparent!important;border:1.5px solid var(--bad)}
+ .md{align-items:flex-end;padding:0}.mb{width:100%;max-height:82vh;border-radius:20px 20px 0 0}
+}

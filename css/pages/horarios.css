@@ -1,0 +1,7 @@
+/* Pagina Horarios: calendario mensual */
+.cal{display:grid;grid-template-columns:repeat(7,minmax(118px,1fr));gap:4px;min-width:830px}
+.hd{font-size:11px;font-weight:700;color:var(--mut);text-align:center;text-transform:uppercase}
+.c{min-height:90px;border:1px solid var(--bd);border-radius:12px;padding:5px;background:var(--in)}.c.hol,.c.off{background:var(--hol)}.c.key{background:var(--key)}
+.c small{color:var(--mut);font-weight:700;font-size:11px}
+.ch{display:block;color:#fff;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.2);padding:1px 5px;margin-top:2px;font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ch.m{background:transparent!important;border:1px dashed var(--bad);color:var(--bad)}

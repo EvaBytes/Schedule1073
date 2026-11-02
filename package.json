@@ -1,0 +1,15 @@
+{
+  "name": "schedules",
+  "version": "1.0.0",
+  "description": "App web para generar horarios trimestrales de empleados por secciones. Sin dependencias ni servidor: HTML + CSS + JavaScript puro.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}

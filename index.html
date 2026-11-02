@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DECATHLON 1073 · Tienda 9:30–21:30</title>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components/cards.css">
+<link rel="stylesheet" href="css/components/forms.css">
+<link rel="stylesheet" href="css/components/buttons.css">
+<link rel="stylesheet" href="css/components/timeline.css">
+<link rel="stylesheet" href="css/components/modal.css">
+<link rel="stylesheet" href="css/pages/planifica.css">
+<link rel="stylesheet" href="css/pages/horarios.css">
+<link rel="stylesheet" href="css/pages/home.css">
+<link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+<div class="app"><aside class="sb" id="sb"></aside><div class="mn"><header><h1 id="ttl">DECATHLON 1073</h1><p>Horario tienda: 9:30 – 21:30</p></header>
+<main>
+    <section id="pg-home" style="display:grid;gap:16px"></section><section id="cfg" style="display:grid;gap:16px">
+        <div class="grid">
+         <div class="card"><h2>Trimestre y fechas</h2>
+          <div class="row"><div><label>Año</label><input id="yr" type="number"></div>
+          <div><label>Trimestre</label><select id="q"><option value="0">T1 · Ene–Mar</option><option value="1">T2 · Abr–Jun</option><option value="2">T3 · Jul–Sep</option><option value="3">T4 · Oct–Dic</option></select></div></div>
+          <label>Festivos (tienda cerrada) · AAAA-MM-DD</label><textarea id="hol"></textarea>
+          <label>Días clave (usan la dotación de día clave) · AAAA-MM-DD</label><textarea id="key"></textarea>
+         </div>
+         <div class="card"><h2>Necesidades de la tienda · secciones y turnos</h2><div id="secs"></div>
+          <button class="s" id="adds">+ Añadir sección</button>
+          <h2 style="margin-top:16px">Vista de un día tipo</h2><div id="pv"></div>
+          <p class="note">Barras = turnos definidos. La franja azul es el horario de tienda. Nº = personas necesarias.</p>
+         </div>
+         <div class="card"><h2>Disponibilidad por sección</h2><div id="emps"></div>
+          <p class="note">Marca en cada sección los días en que puede trabajar cada persona este trimestre (sin días marcados = no trabaja ahí). El generador reparte según su base de horas semanales y las necesidades de la tienda. Un turno por persona y día, con 11 h de descanso. La disponibilidad se guarda por trimestre y el siguiente parte de la del anterior.</p>
+          <button class="s" id="adde">+ Añadir empleado</button>
+         </div>
+        </div>
+       </section>
+       <div class="bar" id="pg-bar"><button class="p" id="gen">Generar horarios</button><button class="s" id="prt">Imprimir / PDF</button><button class="s" id="clr">Borrar ediciones manuales</button></div>
+       <section id="out" style="display:grid;gap:16px"></section>
+</main></div></div>
+<script src="js/core/constants.js"></script>
+<script src="js/core/utils.js"></script>
+<script src="js/core/state.js"></script>
+<script src="js/services/scheduler.js"></script>
+<script src="js/components/day-toggles.js"></script>
+<script src="js/components/timeline.js"></script>
+<script src="js/components/warnings.js"></script>
+<script src="js/components/edit-modal.js"></script>
+<script src="js/components/sidebar.js"></script>
+<script src="js/pages/plan.js"></script>
+<script src="js/pages/horarios.js"></script>
+<script src="js/pages/home.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

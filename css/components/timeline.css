@@ -1,0 +1,13 @@
+/* Linea de tiempo 6h-22h y barras de turno */
+.sc2{overflow-x:auto}
+.ax{display:grid;grid-template-columns:repeat(16,1fr);font-size:10px;color:var(--mut);margin-left:74px;min-width:640px}
+.dr{display:grid;grid-template-columns:74px 1fr;min-width:720px;border-top:1px solid var(--bd);padding:4px 0}
+.dr.hol{background:var(--hol)}.dr.key{background:var(--key)}
+.dl{font-size:12px;font-weight:700}.dl small{display:block;font-weight:500;color:var(--mut)}
+.tl{position:relative;min-height:22px;background:repeating-linear-gradient(90deg,transparent 0 calc(6.25% - 1px),var(--bd) calc(6.25% - 1px) 6.25%)}
+.ob{position:absolute;top:0;bottom:0;left:21.875%;width:75%;background:var(--open);opacity:.8}
+.b{position:absolute;height:18px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.2);color:#fff;font-size:11px;padding:0 5px;line-height:18px;overflow:hidden;white-space:nowrap;font-weight:600}
+.b.m{background:transparent!important;border:1.5px dashed var(--bad);color:var(--bad)}
+.pv{display:grid;grid-template-columns:90px 1fr;gap:6px;align-items:center;font-size:12px;margin:3px 0}
+.pv .tl{height:16px}.pv .b{height:14px;line-height:14px;font-size:10px}
+.b[data-key],.ch[data-key]{cursor:pointer}.b[data-key]:hover,.ch[data-key]:hover{filter:brightness(1.12)}

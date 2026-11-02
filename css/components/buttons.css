@@ -1,0 +1,9 @@
+/* Botones, botones de dias y pestanas */
+.d{min-width:28px;height:28px;border-radius:9px;border:1px solid var(--bd);background:var(--in);color:var(--mut);font-weight:700;cursor:pointer;font-size:12px;padding:0 6px}
+.d.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.d.sc.on{background:var(--c);border-color:var(--c)}
+.x{background:none;border:0;color:var(--bad);cursor:pointer;font-size:12px;margin-left:auto}
+button.p{background:linear-gradient(135deg,#0094dd,#0082C3 55%,#3643BA);box-shadow:0 6px 20px rgba(0,130,195,.45);color:#fff;border:0;border-radius:12px;padding:12px 24px;font:inherit;font-weight:700;cursor:pointer}
+button.s{background:var(--in);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:var(--blue);border:1.5px solid var(--blue);border-radius:10px;padding:8px 13px;font:inherit;font-weight:600;cursor:pointer}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.tabs button{margin-right:6px}.tabs .on{background:var(--blue);color:#fff}

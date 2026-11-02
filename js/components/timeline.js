@@ -1,0 +1,4 @@
+// Barras de turno y carriles de la linea de tiempo
+function lanes(o){return [...o.as.map(a=>({...a,t:S.emps[a.i].n})),...o.miss.map(m=>({...m,m:1,t:'Sin cubrir'}))].filter(a=>!flt||a.sec.id===flt).sort((a,b)=>a.s-b.s||a.e-b.e)}
+function bar(a,i){return `<div class="b${a.m?' m':''}" data-key="${esc(a.key)}" style="top:${i*20+2}px;left:${(a.s-6)/16*100}%;width:${(a.e-a.s)/16*100}%;background:${a.sec.c}" title="${esc(a.sec.n+' · '+a.sh.n)}">${a.man?'✎ ':''}${fm(a.s)} ${esc(a.t)}</div>`}
+function shiftList(l){return l.map(a=>`<div class="li${a.m?' m':''}" data-key="${esc(a.key)}" style="--c:${a.sec.c}"><span class="lt">${fm(a.s)}–${fm(a.e)}</span><span class="ln"><b>${esc(a.t)}</b><small>${esc(a.sec.n)} · ${esc(a.sh.n)}${a.man?' · ✎':''}</small></span></div>`).join('')}

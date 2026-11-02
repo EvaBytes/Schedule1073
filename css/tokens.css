@@ -1,0 +1,5 @@
+/* Variables de diseno: colores Decathlon, glass, modo oscuro */
+:root{--blue:#0082C3;--bg:#e4eff8;--glass:rgba(255,255,255,.52);--gb:rgba(255,255,255,.8);--in:rgba(255,255,255,.55);--card:#fff;--tx:#14232f;--mut:#566b7b;--bd:rgba(20,60,90,.14);--bad:#d92d20;--hol:rgba(120,140,160,.22);--key:rgba(255,200,40,.28);--open:rgba(0,130,195,.14);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1620;--glass:rgba(20,38,52,.5);--gb:rgba(255,255,255,.14);--in:rgba(255,255,255,.07);--card:#16242f;--tx:#e8f0f6;--mut:#9bb0bf;--bd:rgba(255,255,255,.14);--hol:rgba(150,170,190,.16);--key:rgba(255,200,40,.2);--blue:#2aa3e0;--open:rgba(42,163,224,.16)}}
+:root[data-theme="dark"]{--bg:#0a1620;--glass:rgba(20,38,52,.5);--gb:rgba(255,255,255,.14);--in:rgba(255,255,255,.07);--card:#16242f;--tx:#e8f0f6;--mut:#9bb0bf;--bd:rgba(255,255,255,.14);--hol:rgba(150,170,190,.16);--key:rgba(255,200,40,.2);--blue:#2aa3e0;--open:rgba(42,163,224,.16)}

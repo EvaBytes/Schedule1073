@@ -1,0 +1,2 @@
+/* Impresion / PDF (debe cargarse el ultimo) */
+@media print{header,#cfg,.bar,.md,.sb,#pg-home{display:none}.mn{display:block}body{background:#fff}.card{border:0;background:#fff;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}}

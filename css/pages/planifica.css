@@ -1,0 +1,7 @@
+/* Pagina Planifica: secciones, turnos y empleados */
+.sec{border-left:5px solid var(--c);padding:6px 0 6px 12px;margin-bottom:14px}
+.sh{display:grid;grid-template-columns:1.3fr 86px 86px 46px 46px;gap:5px;margin:6px 0 2px}
+.sh input{padding:6px}
+.days{display:flex;gap:4px;flex-wrap:wrap;align-items:center;margin-bottom:6px}
+.emp{padding:10px 0;border-top:1px solid var(--bd)}.emp:first-of-type{border-top:0}
+.eh{display:grid;grid-template-columns:1fr 70px;gap:8px;margin-bottom:6px}
