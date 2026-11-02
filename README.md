@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Horarios por secciones · Tienda
 
 App web para generar horarios trimestrales de empleados por secciones.
@@ -34,3 +35,6 @@ horarios-tienda/
   11 h de descanso entre turnos, respeta horas de contrato, disponibilidad por
   sección y trimestre, ausencias y ediciones manuales.
 - Los colores corporativos se cambian en `css/tokens.css`.
+=======
+# Schedule1073
+>>>>>>> bc91aa17dd77bb41a5ea06a8294ccce743fdf66c
